@@ -27,6 +27,3 @@ const server = new SMTPServer({
 
 server.listen(25 , ()=> console.log("server running on 25"));
 
-server.on("error", (err) => {
-    console.log("Error %s", err.message);
-});
